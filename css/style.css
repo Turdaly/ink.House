@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
+    font-family: 'Raleway', sans-serif;
     min-width: 1440px;
 }
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 ul {
@@ -18,6 +22,16 @@ ul {
 
 img {
     max-width: 100%;
+}
+
+h1 {
+    font-weight: 500px;
+    font-size: 60px;
+}
+
+h2 {
+    font-weight: 500px;
+    font-size: 40px;
 }
 
 .container {
@@ -33,6 +47,10 @@ img {
     background-color: #E1EDE6;
 }
 
+.btn {
+    height: 65px;
+}
+
 .header__container {
     display: flex;
     align-items: center;
@@ -40,14 +58,19 @@ img {
     height: 100%;
 }
 
-.logo-img {
-    margin-right: auto;
+.logo__link {
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+ 
 }
 
 .logo-name {
-    display: inline;
     color: #598D66;
-    font-size: 20px;    
+    font-size: 20px;
+    font-weight: 700; 
 }
 
 .nav-list {
@@ -58,9 +81,9 @@ img {
     margin-right: 60px;
 }
 
-.btn {
-    height: 65px;
-    width: 310px;
+
+.section-hero__btn {
+    width: 225px;
 }
 
 /* Header */
@@ -71,4 +94,36 @@ img {
 
 .section-hero__content {
     margin-top: 145px;
+    margin-left: 30px;
+}
+
+.section-hero__heading {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.section-hero__description {
+    margin-top: 0;
+    margin-bottom: 60px;
+    font-weight: 540px;
+    font-size: 18px;
+
+}
+
+/* Section Cotolog */
+
+.section-cotolog__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-cotolog__countries {
+    display: flex;
+}
+
+.country__btn {
+    width: 126px;
+    height: 43px;
+    border-radius: 20px;
+    padding: 10px, 20px, 10px, 20px;
 }
