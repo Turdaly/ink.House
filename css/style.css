@@ -7,6 +7,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     min-width: 1440px;
+    margin: 0;
 }
 
 a {
@@ -15,13 +16,21 @@ a {
 }
 
 ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 
 img {
     max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+ul,
+figure {
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -33,6 +42,7 @@ h2 {
     font-weight: 500px;
     font-size: 40px;
 }
+
 
 .container {
     max-width: 1110px;
@@ -84,9 +94,13 @@ h2 {
 
 .section-hero__btn {
     width: 225px;
+    font-size: 20px;
+    color: #598D66;
+    border: 1px solid #598D66;
+    background-color: transparent;
 }
 
-/* Header */
+/* Section HERO */
 
 .section-hero__container {
     display: flex;
@@ -97,9 +111,8 @@ h2 {
     margin-left: 30px;
 }
 
-.section-hero__heading {
-    margin-top: 0px;
-    margin-bottom: 20px;
+.footer-menu__heading {
+    font-size: 20px;
 }
 
 .section-hero__description {
@@ -112,18 +125,60 @@ h2 {
 
 /* Section Cotolog */
 
-.section-cotolog__top {
+.reproduction__head {
     display: flex;
     justify-content: space-between;
+    margin: 70px 0 30px 0;
 }
 
-.section-cotolog__countries {
+.reproduction__countries {
     display: flex;
 }
 
-.country__btn {
+.reproduction__country-btn {
     width: 126px;
     height: 43px;
     border-radius: 20px;
-    padding: 10px, 20px, 10px, 20px;
+    background: #D4E8D9;
+}
+
+.reproduction__country-btn:not(:last-child) {
+    margin-right: 32px;
+}
+
+.reproduction__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.reproduction__card {
+    padding: 20px 20px 30px 20px;
+    background-color: #E1EDE6;
+}
+
+.reproduction__card-author {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #86928B;
+}
+.reproduction__card-name {
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+.reproduction__card-decsrciption {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.reproduction__card-price {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.reproduction__card-btn {
+    font-size: 20px;
+    height: 65px;
+    width: 310px;
+    border: 1px solid #598D66;
+    color: #598D66;
+    background-color: transparent;
 }
