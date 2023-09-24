@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     min-width: 1400px;
@@ -58,8 +62,13 @@ h2 {
 }
 
 .btn {
+    display: inline-block;
     height: 65px;
     font-size: 20px;
+    line-height: 1;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: background-color .4s ease;
 }
 
 .header__container {
@@ -90,7 +99,22 @@ h2 {
     margin-right: 60px;
 }
 
+.nav-link:hover {
+    color: #598D66;
+}
 
+
+.nav-bascet {
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../images/shopping-cart.svg');
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Section HERO */
 .section-hero__btn {
     width: 225px;
     color: #598D66;
@@ -98,7 +122,10 @@ h2 {
     background-color: transparent;
 }
 
-/* Section HERO */
+.section-hero__btn:hover {
+    color: #F4F6F5;
+    background-color: #598D66;
+}
 
 .section-hero__container {
     display: flex;
@@ -113,11 +140,17 @@ h2 {
     font-size: 20px;
 }
 
+.section-hero__heading-logo {
+    color: #598D66;
+}
+
 .section-hero__description {
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 60px;
-    font-weight: 540px;
+    width: 540px;
+    font-weight: 500;
     font-size: 18px;
+    color: #86928B;
 
 }
 
@@ -142,18 +175,33 @@ h2 {
     height: 43px;
     border-radius: 20px;
     background: #D4E8D9;
+    outline: none;
+    border: none;
 }
 
 .reproduction__country-btn:not(:last-child) {
     margin-right: 32px;
 }
 
+.reproduction__country-btn:hover {
+    color: #F4F6F5;
+    background-color:#598D66;
+}
+
+.reproduction__country-btn-active {
+    color: #F4F6F5;
+    background: #598D66;
+}
+
 .reproduction__cards {
+    display: none;
+}
+
+.reproduction__cards-active {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
 }
-
 .reproduction__card {
     padding: 20px 20px 30px 20px;
     background-color: #E1EDE6;
@@ -168,7 +216,7 @@ h2 {
     margin-bottom: 8px;
     font-size: 30px;
 }
-.reproduction__card-decsrciption {
+.reproduction__card-descrciption {
     margin-bottom: 30px;
     font-size: 18px;
 }
@@ -183,6 +231,11 @@ h2 {
     border: 1px solid #598D66;
     color: #598D66;
     background-color: transparent;
+}
+
+.reproduction__card-btn:hover {
+    color: #F4F6F5;
+    background-color: #598D66;
 }
 
 /* Section Collection */
@@ -239,6 +292,7 @@ h2 {
 .section-team__description {
     margin-top: 20px;
     margin-bottom: 20px;
+    line-height: 27px;
 }
 
 .section-user__img:not(:last-child) {
